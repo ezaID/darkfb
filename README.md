@@ -1,6 +1,3 @@
-
-
-
 script DARK FB new
 
 pkg install python2
