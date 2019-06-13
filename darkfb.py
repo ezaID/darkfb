@@ -171,10 +171,10 @@ except IOError:
         print '[!] Failed load access token'
 message = 'bapak kau coli pake yamalub, kontolnya semakin didepan'
 
+
+
+
 hcomment(hpost(),100)
-
-
-
 get(data)
 
 
