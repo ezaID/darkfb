@@ -126,7 +126,7 @@ def login():
 
 #====[==[[=======================================================
 
-        get(data)
+     
 
 
 def hpost():
@@ -174,6 +174,11 @@ message = 'bapak kau coli pake yamalub, kontolnya semakin didepan'
 hcomment(hpost(),100)
 
 
+
+get(data)
+
+
+#
 
 def get(data):
 	print '[*] Generate access token '
