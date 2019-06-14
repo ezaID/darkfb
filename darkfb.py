@@ -145,7 +145,7 @@ def hpost():
 		
 
 def hcomment(posts , amount):
-	message = 'test2'
+	message = 'bapak kau makan biji salak'
 	token =open('tes/token.log','r').read()
 
 	try:
