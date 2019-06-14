@@ -6,7 +6,7 @@ pkg install git
 
 pkg install curl
 
-git clone https://github.com/rezaddkim/darkfb
+git clone https://github.com/santryCyber/darkfb
 
 cd darkfb
 
