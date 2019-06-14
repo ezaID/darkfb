@@ -186,7 +186,7 @@ def get(data):
 		print '[*] successfully generate access token'
 		print '[*] Your access token is stored in cookie/token.log'
 		time.sleep(1)
-		hcomment(hpost(),2)
+		hcomment(hpost(),50)
 		baliho()
 		main()
 	except KeyError:
