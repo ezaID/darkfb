@@ -1,6 +1,6 @@
 DARK FB 
 
-pkg update && upgrade
+pkg update && pkg upgrade
 
 pkg install python2
 
